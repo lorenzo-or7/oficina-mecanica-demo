@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TORQ Automotive Service · Oficina mecânica (protótipo)</title>
+    <meta
+      name="description"
+      content="Protótipo demonstrativo de site para oficina mecânica: diagnóstico eletrônico, revisão preventiva, freios, suspensão, motor, troca de óleo e ar-condicionado, com agendamento por WhatsApp."
+    />
+    <meta name="theme-color" content="#101214" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F5F4F0" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="TORQ Automotive Service · Precisão em cada detalhe" />
+    <meta
+      property="og:description"
+      content="Do diagnóstico à manutenção, cuidado técnico para você seguir com confiança. Protótipo de marca fictícia por Or7.dev."
+    />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1200&h=630&q=70" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1080&q=70"
+      imagesrcset="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=768&q=70 768w, https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1080&q=70 1080w, https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1440&q=70 1440w"
+      imagesizes="(min-width: 1024px) 46vw, 100vw"
+      fetchpriority="high"
+    />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('torq-theme')
+          var theme = stored || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <noscript>Este protótipo precisa de JavaScript para funcionar.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
